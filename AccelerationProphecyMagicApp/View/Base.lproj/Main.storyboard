@@ -19,14 +19,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZL-D3-JLv">
-                                <rect key="frame" x="58" y="670" width="299" height="48"/>
-                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZL-D3-JLv">
+                                <rect key="frame" x="58" y="670" width="300" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="9ZL-D3-JLv" secondAttribute="height" multiplier="299:48" id="hbP-v2-QRS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="Settings">
+                                <state key="normal" title="Settings" image="Settings">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -42,14 +40,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwE-gs-HW4">
-                                <rect key="frame" x="58" y="572" width="299" height="48"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwE-gs-HW4">
+                                <rect key="frame" x="58" y="574" width="300" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jwE-gs-HW4" secondAttribute="height" multiplier="299:48" id="TCq-ZI-4eu"/>
                                 </constraints>
-                                <state key="normal">
+                                <state key="normal" image="Play">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                                 </state>
                                 <connections>
                                     <segue destination="ZH5-nh-hbM" kind="presentation" modalPresentationStyle="fullScreen" id="ZJ9-a6-FBv"/>
@@ -223,6 +220,8 @@ VHVybhEREeKAqA1EaXJlY3Rpb24RERERERERERERERERERERERERERERERERA
         </scene>
     </scenes>
     <resources>
+        <image name="Play" width="1024" height="212"/>
+        <image name="Settings" width="1023" height="211"/>
         <image name="TOP" width="3316" height="4416"/>
         <image name="arrow.down" catalog="system" width="120" height="128"/>
         <image name="arrow.left" catalog="system" width="128" height="98"/>
