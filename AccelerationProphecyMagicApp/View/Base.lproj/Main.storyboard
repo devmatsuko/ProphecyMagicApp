@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AccelerationProphecyMagicApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Top" id="BYZ-38-t0r" customClass="ViewController" customModule="AccelerationProphecyMagicApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,6 +115,7 @@
                         <outlet property="footLabel" destination="bL0-20-HiU" id="64v-EO-tuu"/>
                         <outlet property="headLabel" destination="xcF-6e-fvn" id="a8f-tS-Pr7"/>
                         <outlet property="playImage" destination="THx-3Q-qzD" id="bMn-Ji-Uvy"/>
+                        <segue destination="Ygt-6G-pzJ" kind="show" identifier="end" id="vva-dH-ScP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hCZ-Cy-AEq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -125,6 +126,51 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="640.57971014492762" y="-192.1875"/>
+        </scene>
+        <!--End View Controller-->
+        <scene sceneID="2TK-U6-1aY">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Ygt-6G-pzJ" customClass="EndViewController" customModule="AccelerationProphecyMagicApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XTy-KH-iwf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="あなたの選んだカードは" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNN-xz-LnZ">
+                                <rect key="frame" x="-2" y="44" width="416" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B5L-q0-f83">
+                                <rect key="frame" x="-2" y="0.0" width="416" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ShC-Js-p1r">
+                                <rect key="frame" x="57" y="802" width="300" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back to top" image="BackToTop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="wKs-i0-pcd" eventType="touchUpInside" id="akL-61-4hI"/>
+                                    <action selector="backButton:" destination="Ygt-6G-pzJ" eventType="touchUpInside" id="X2H-cE-Xqf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="61v-74-ClK"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qY7-HS-SpY"/>
+                    <connections>
+                        <outlet property="backButton" destination="ShC-Js-p1r" id="Q7M-jm-YRB"/>
+                        <outlet property="endImage" destination="B5L-q0-f83" id="I5t-7M-LRk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJu-2m-Fme" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1504.3478260869567" y="-192.1875"/>
         </scene>
         <!--Settings View Controller-->
         <scene sceneID="euP-8B-dca">
@@ -151,7 +197,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U4p-wr-NJY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U4p-wr-NJY">
                                 <rect key="frame" x="0.0" y="96" width="414" height="595"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
