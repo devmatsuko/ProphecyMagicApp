@@ -65,8 +65,9 @@ class EndViewController: UIViewController {
     
     
     @IBAction func backButton(_ sender: Any) {
-        let secondViewController = self.storyboard?.instantiateViewController(withIdentifier: "Top") as! ViewController
-        self.present(secondViewController, animated: true, completion: nil)
+
+        self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+        
     }
     
 
