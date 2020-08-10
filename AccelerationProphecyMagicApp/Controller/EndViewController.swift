@@ -40,22 +40,22 @@ class EndViewController: UIViewController {
             self.motionManager.startDeviceMotionUpdates(to: OperationQueue.current!, withHandler: {(motion:CMDeviceMotion?, error:Error?) in
                 
                 self.getMotionData(deviceMotion: motion!)
-                if (motion?.gravity.x)! >= 0.9 {
+                if (motion?.gravity.x)! >= 0.7 {
                     //センサーをストップする
                     self.motionManager.stopDeviceMotionUpdates()
                     //トランプの画像を表示
                     self.endImage.image = UIImage(named: "Spade")
-                }else if (motion?.gravity.x)! <= -0.9 {
+                }else if (motion?.gravity.x)! <= -0.7 {
                     //センサーをストップする
                     self.motionManager.stopDeviceMotionUpdates()
                      //トランプの画像を表示
                     self.endImage.image = UIImage(named: "Club")
-                }else if (motion?.gravity.y)! >= 0.9 {
+                }else if (motion?.gravity.y)! >= 0.7 {
                     //センサーをストップする
                     self.motionManager.stopDeviceMotionUpdates()
                      //トランプの画像を表示
                     self.endImage.image = UIImage(named: "Heart")
-                }else if (motion?.gravity.y)! <= -0.9 {
+                }else if (motion?.gravity.y)! <= -0.7 {
                     //センサーをストップする
                     self.motionManager.stopDeviceMotionUpdates()
                 }
