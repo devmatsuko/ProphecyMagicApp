@@ -83,7 +83,6 @@ class PlayViewController: UIViewController {
                  }
             })
         }
-        
     }
     
     //モーションデータの取得（例としてコンソールへ出力）
