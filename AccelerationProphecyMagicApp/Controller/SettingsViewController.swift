@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import SegementSlide
+import Alamofire
+import SDWebImage
 
 class SettingsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
@@ -61,5 +64,11 @@ class SettingsViewController: UIViewController,UITableViewDataSource,UITableView
         
         return cell
     }
-
+    
+    
+    @IBAction func tuorial(_ sender: Any) {
+        
+        
+    }
+    
 }
