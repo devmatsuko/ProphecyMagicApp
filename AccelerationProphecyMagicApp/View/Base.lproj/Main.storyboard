@@ -239,7 +239,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="tuorial:" destination="wKs-i0-pcd" eventType="touchUpInside" id="cFO-zY-Bmz"/>
+                                    <segue destination="tNF-Jn-fDg" kind="presentation" id="Gdg-nn-ehU"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="U4p-wr-NJY">
@@ -300,7 +300,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fNM-at-frD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="628.98550724637687" y="490.76086956521743"/>
+            <point key="canvasLocation" x="641" y="560"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="0gc-Zq-dzT">
+            <objects>
+                <viewController id="tNF-Jn-fDg" customClass="WebViewController" customModule="ProphecyMagic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M6L-ty-d6Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="EWl-rs-r3v"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iBz-rM-NEg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1527" y="562"/>
         </scene>
     </scenes>
     <resources>

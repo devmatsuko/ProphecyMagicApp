@@ -7,9 +7,7 @@
 //
 
 import UIKit
-import SegementSlide
-import Alamofire
-import SDWebImage
+import WebKit
 
 class SettingsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
@@ -17,6 +15,8 @@ class SettingsViewController: UIViewController,UITableViewDataSource,UITableView
     var turnDirectionStringArray = ["↑","→","↓","←"]
     
     var cardImageStringArray = ["Heart","Club","Diamond","Spade"]
+    
+    var webView = WKWebView()
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -64,11 +64,4 @@ class SettingsViewController: UIViewController,UITableViewDataSource,UITableView
         
         return cell
     }
-    
-    
-    @IBAction func tuorial(_ sender: Any) {
-        
-        
-    }
-    
 }
