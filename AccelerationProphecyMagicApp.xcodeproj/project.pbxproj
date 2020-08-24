@@ -22,7 +22,7 @@
 
 /* Begin PBXFileReference section */
 		3BB1D4983CE4A7A8926FBD79 /* Pods-AccelerationProphecyMagicApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AccelerationProphecyMagicApp.release.xcconfig"; path = "Target Support Files/Pods-AccelerationProphecyMagicApp/Pods-AccelerationProphecyMagicApp.release.xcconfig"; sourceTree = "<group>"; };
-		4555FC6324891C1E00095FEE /* ProphecyMagic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProphecyMagic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4555FC6324891C1E00095FEE /* Prophecy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Prophecy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4555FC6624891C1E00095FEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4555FC6824891C1E00095FEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4555FC6A24891C1E00095FEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 		4555FC6424891C1E00095FEE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4555FC6324891C1E00095FEE /* ProphecyMagic.app */,
+				4555FC6324891C1E00095FEE /* Prophecy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,7 +146,7 @@
 			);
 			name = AccelerationProphecyMagicApp;
 			productName = AccelerationProphecyMagicApp;
-			productReference = 4555FC6324891C1E00095FEE /* ProphecyMagic.app */;
+			productReference = 4555FC6324891C1E00095FEE /* Prophecy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -396,14 +396,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R34Y59CRW6;
+				DEVELOPMENT_TEAM = ZF56A574S9;
 				INFOPLIST_FILE = AccelerationProphecyMagicApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.devmatsuko.AccelerationProphecyMagicApp;
-				PRODUCT_NAME = ProphecyMagic;
+				PRODUCT_NAME = Prophecy;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -415,14 +415,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R34Y59CRW6;
+				DEVELOPMENT_TEAM = ZF56A574S9;
 				INFOPLIST_FILE = AccelerationProphecyMagicApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.devmatsuko.AccelerationProphecyMagicApp;
-				PRODUCT_NAME = ProphecyMagic;
+				PRODUCT_NAME = Prophecy;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

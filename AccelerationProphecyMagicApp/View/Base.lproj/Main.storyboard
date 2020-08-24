@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="Top" id="BYZ-38-t0r" customClass="ViewController" customModule="ProphecyMagic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Top" id="BYZ-38-t0r" customClass="ViewController" customModule="Prophecy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,7 +85,7 @@
         <!--Play View Controller-->
         <scene sceneID="IXg-Yg-znZ">
             <objects>
-                <viewController id="ZH5-nh-hbM" customClass="PlayViewController" customModule="ProphecyMagic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZH5-nh-hbM" customClass="PlayViewController" customModule="Prophecy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rlx-j4-sid">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,7 +151,7 @@
         <!--End View Controller-->
         <scene sceneID="2TK-U6-1aY">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Ygt-6G-pzJ" customClass="EndViewController" customModule="ProphecyMagic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Ygt-6G-pzJ" customClass="EndViewController" customModule="Prophecy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XTy-KH-iwf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -211,7 +211,7 @@
         <!--Settings View Controller-->
         <scene sceneID="euP-8B-dca">
             <objects>
-                <viewController id="wKs-i0-pcd" customClass="SettingsViewController" customModule="ProphecyMagic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wKs-i0-pcd" customClass="SettingsViewController" customModule="Prophecy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YIr-c0-dhm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,7 +305,7 @@
         <!--Web View Controller-->
         <scene sceneID="0gc-Zq-dzT">
             <objects>
-                <viewController id="tNF-Jn-fDg" customClass="WebViewController" customModule="ProphecyMagic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tNF-Jn-fDg" customClass="WebViewController" customModule="Prophecy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="M6L-ty-d6Q">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
