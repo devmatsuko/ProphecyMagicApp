@@ -55,6 +55,12 @@
                                 <color key="highlightedColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PN9-jZ-je5" customClass="GADBannerView">
+                                <rect key="frame" x="58" y="835" width="300" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="PN9-jZ-je5" secondAttribute="height" multiplier="300:61" id="HYn-Tv-L1J"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -65,18 +71,24 @@
                             <constraint firstItem="9ZL-D3-JLv" firstAttribute="top" secondItem="jwE-gs-HW4" secondAttribute="bottom" constant="36" id="Fkd-0J-WOP"/>
                             <constraint firstItem="BK5-js-uU2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="N0L-rB-9na"/>
                             <constraint firstAttribute="bottom" secondItem="ZhN-Eb-6Jj" secondAttribute="bottom" id="XRi-x6-uDs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PN9-jZ-je5" secondAttribute="trailing" constant="56" id="YeT-ZS-U8K"/>
                             <constraint firstItem="ZhN-Eb-6Jj" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Z1V-e0-OwH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9ZL-D3-JLv" secondAttribute="trailing" constant="56" id="cjt-FJ-7YJ"/>
                             <constraint firstItem="9ZL-D3-JLv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="diI-FB-tSO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9ZL-D3-JLv" secondAttribute="centerY" constant="132" id="e9a-6P-31a"/>
                             <constraint firstItem="BK5-js-uU2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="lz0-Ng-ZtY"/>
                             <constraint firstItem="ZhN-Eb-6Jj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="o5s-7Z-618"/>
+                            <constraint firstAttribute="bottom" secondItem="PN9-jZ-je5" secondAttribute="bottom" id="qpx-pS-chb"/>
+                            <constraint firstItem="PN9-jZ-je5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="sfn-aI-j6J"/>
                             <constraint firstItem="jwE-gs-HW4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="58" id="xic-zv-2c0"/>
                             <constraint firstItem="ZhN-Eb-6Jj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ywm-2G-xIC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="M66-dC-4oG"/>
+                    <connections>
+                        <outlet property="bannerView" destination="PN9-jZ-je5" id="eNE-OS-7wT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
