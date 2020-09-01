@@ -30,9 +30,13 @@ class ViewController: UIViewController,GADBannerViewDelegate {
     
     func showAdBanner(){
         
+        let request: GADRequest = GADRequest();
+        // リリース時には削除する！
+//        request.testDevices = [ "d5f876be5a7bee3c807f4f6f26312e0d" ] // Sample device ID
         bannerView.adUnitID = AdMobID
         bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+        bannerView.delegate = self
+        bannerView.load(request)
         
     }
     
